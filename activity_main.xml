@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU GŁÓWNE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
 
-    <com.example.lab2.Panel
-
-        android:id="@+id/chess_panel"
+    <Button
+        android:id="@+id/btnUno"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:text="Zadanie 2: Moje Dane"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/tvURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://www.google.pl"
+        android:background="#E0E0E0"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/btnDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zadanie 3: Otwórz Przeglądarkę"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnTres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zadanie 4: Lokalizacja GPS" />
 
 </LinearLayout>
